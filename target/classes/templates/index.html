@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Manager</title>
+</head>
+<body>
+<h1>Book List</h1>
+<ul>
+    <th:block th:each="b : ${books}">
+        <li>
+            <a th:href="@{'/book/' + ${b.id}}"><span th:text="${b.title}"></span></a> - 
+            <span th:text="${b.author}"></span> ($<span th:text="${b.price}"></span>)
+        </li>
+    </th:block>
+</ul>
+</body>
+</html>
