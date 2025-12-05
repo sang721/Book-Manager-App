@@ -1,7 +1,7 @@
 <html lang="vi"><head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Thư Viện Ebook Miễn Phí | Đọc Truyện – Đọc Sách online</title>
+	<title>App Đọc Sách | Đọc Truyện – Đọc Sách online</title>
 	        <style>
             .affiliate-popup-overlay {
                 position: fixed;
@@ -64,43 +64,7 @@
             }
         </style>
 
-        <script async="" src="//za.zdn.vn/v3/za.js?20424"></script><script src="https://connect.facebook.net/vi_VN/sdk.js?hash=c76502f5503aba7c879b4bf1393b930e" async="" crossorigin="anonymous"></script><script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const popup = document.getElementById('affiliate-popup');
-            if (!popup) return;
-
-            const link = document.getElementById('popup-link');
-            const closeBtn = document.getElementById('close-popup');
-            const isDesktop = window.innerWidth > 1024;
-            if (!isDesktop) return;
-
-            const now = Date.now();
-            const lastShown = localStorage.getItem('popupLastShown');
-            const hideDuration = 72 * 60 * 60 * 1000;
-
-            if (!lastShown || now - lastShown > hideDuration) {
-                setTimeout(() => popup.classList.add('show'), 10000);
-            }
-
-            // Khi người dùng click ảnh hoặc nút Close => mở link affiliate + ẩn popup
-            const handleClick = () => {
-                window.open(link.href, '_blank');
-                localStorage.setItem('popupLastShown', Date.now());
-                popup.classList.remove('show');
-            };
-
-            link.addEventListener('click', (e) => {
-                e.preventDefault();
-                handleClick();
-            });
-
-            closeBtn.addEventListener('click', (e) => {
-                e.preventDefault();
-                handleClick();
-            });
-        });
-        </script>
-        <meta name="description" content="Nhà sách miễn phí">
+        <meta name="description" content="App Đọc Sách">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <link rel="canonical" href="https://nhasachmienphi.com">
 <script id="website-schema" type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"WebSite","name":"Nh\u00e0 s\u00e1ch mi\u1ec5n ph\u00ed","alternateName":"Th\u01b0 Vi\u1ec7n Ebook Mi\u1ec5n Ph\u00ed","description":"Nh\u00e0 s\u00e1ch mi\u1ec5n ph\u00ed","url":"https:\/\/nhasachmienphi.com"}</script>
@@ -108,16 +72,16 @@
 <meta property="og:site_name" content="Thư Viện Ebook Miễn Phí">
 <meta property="og:locale" content="vi">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Nhà sách miễn phí">
-<meta property="og:description" content="Nhà sách miễn phí">
+<meta property="og:title" content="App Đọc Sách">
+<meta property="og:description" content="App Đọc Sách">
 <meta property="fb:pages" content="">
 <meta property="fb:admins" content="">
 <meta property="fb:app_id" content="">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="">
 <meta name="twitter:creator" content="">
-<meta name="twitter:title" content="Nhà sách miễn phí">
-<meta name="twitter:description" content="Nhà sách miễn phí">
+<meta name="twitter:title" content="App Đọc Sách">
+<meta name="twitter:description" content="App Đọc Sách">
 <link rel="alternate" type="application/rss+xml" title="Dòng thông tin Thư Viện Ebook Miễn Phí »" href="https://nhasachmienphi.com/feed">
 <script type="text/javascript">
 /* <![CDATA[ */
@@ -173,71 +137,6 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
   gtag('config', 'G-FPX0H7JT7T');
 </script>
 
-    <script type="text/javascript">
-    var ajaxurl = "https://nhasachmienphi.com/wp-admin/admin-ajax.php";
-    var home_url = "https://nhasachmienphi.com";
-    var THEME_URL = "https://nhasachmienphi.com/wp-content/themes/sachonl";
-    </script>
-          <meta name="onesignal" content="wordpress-plugin">
-            <script>
-
-      window.OneSignalDeferred = window.OneSignalDeferred || [];
-
-      OneSignalDeferred.push(function(OneSignal) {
-        var oneSignal_options = {};
-        window._oneSignalInitOptions = oneSignal_options;
-
-        oneSignal_options['serviceWorkerParam'] = { scope: '/wp-content/plugins/onesignal-free-web-push-notifications/sdk_files/push/onesignal/' };
-oneSignal_options['serviceWorkerPath'] = 'OneSignalSDKWorker.js';
-
-        OneSignal.Notifications.setDefaultUrl("https://nhasachmienphi.com");
-
-        oneSignal_options['wordpress'] = true;
-oneSignal_options['appId'] = 'ce2f021a-b938-4998-bb00-02c64bf358f7';
-oneSignal_options['allowLocalhostAsSecureOrigin'] = true;
-oneSignal_options['welcomeNotification'] = { };
-oneSignal_options['welcomeNotification']['title'] = "";
-oneSignal_options['welcomeNotification']['message'] = "Chúc Bạn 1 ngày tốt lành";
-oneSignal_options['path'] = "https://nhasachmienphi.com/wp-content/plugins/onesignal-free-web-push-notifications/sdk_files/";
-oneSignal_options['safari_web_id'] = "web.onesignal.auto.05737452-6fb0-4a74-aaf2-b68bc5a2ed6a";
-oneSignal_options['persistNotification'] = false;
-oneSignal_options['promptOptions'] = { };
-oneSignal_options['promptOptions']['actionMessage'] = "Nhận thông báo khi có sách mới";
-oneSignal_options['promptOptions']['acceptButtonText'] = "Đồng Ý";
-oneSignal_options['promptOptions']['cancelButtonText'] = "Không, Cảm ơn";
-oneSignal_options['notifyButton'] = { };
-oneSignal_options['notifyButton']['enable'] = true;
-oneSignal_options['notifyButton']['position'] = 'bottom-left';
-oneSignal_options['notifyButton']['theme'] = 'default';
-oneSignal_options['notifyButton']['size'] = 'small';
-oneSignal_options['notifyButton']['displayPredicate'] = function() {
-              return !OneSignal.User.PushSubscription.optedIn;
-            };
-oneSignal_options['notifyButton']['showCredit'] = false;
-oneSignal_options['notifyButton']['text'] = {};
-oneSignal_options['notifyButton']['text']['tip.state.unsubscribed'] = 'Xin lỗi đã làm phiền Bạn';
-oneSignal_options['notifyButton']['text']['tip.state.subscribed'] = 'Chúc Bạn 1 ngày tốt lành';
-oneSignal_options['notifyButton']['text']['tip.state.blocked'] = 'Xin lỗi đã làm phiền Bạn';
-oneSignal_options['notifyButton']['text']['message.action.unsubscribed'] = 'Đăng ký để nhận thông báo khi có sách mới';
-              OneSignal.init(window._oneSignalInitOptions);
-                    });
-
-      function documentInitOneSignal() {
-        var oneSignal_elements = document.getElementsByClassName("OneSignal-prompt");
-
-        var oneSignalLinkClickHandler = function(event) { OneSignal.Notifications.requestPermission(); event.preventDefault(); };        for(var i = 0; i < oneSignal_elements.length; i++)
-          oneSignal_elements[i].addEventListener('click', oneSignalLinkClickHandler, false);
-      }
-
-      if (document.readyState === 'complete') {
-           documentInitOneSignal();
-      }
-      else {
-           window.addEventListener("load", function(event){
-               documentInitOneSignal();
-          });
-      }
-    </script>
 <link rel="icon" href="https://nhasachmienphi.com/wp-content/uploads/cropped-nha-sach-mien-phi-32x32.png" sizes="32x32">
 <link rel="icon" href="https://nhasachmienphi.com/wp-content/uploads/cropped-nha-sach-mien-phi-192x192.png" sizes="192x192">
 <link rel="apple-touch-icon" href="https://nhasachmienphi.com/wp-content/uploads/cropped-nha-sach-mien-phi-180x180.png">
@@ -261,270 +160,95 @@ oneSignal_options['notifyButton']['text']['message.action.unsubscribed'] = 'Đă
 	<header class="main_header">
 		<div class="container">
 			<div class="hleft">
-				<a href="https://nhasachmienphi.com"><img src="https://nhasachmienphi.com/wp-content/uploads/nha-sach-mien-phi-logo-new-11.7.png"></a>
-			</div>
+								<a href="https://nhasachmienphi.com">
+    <img src="/images/Logo.png" alt="Logo">
+            </a>			</div>
 			<div class="hcenter">
 				<div class="main_menu">
 					<div class="menu-main-menu-container"><ul id="menu-main-menu" class="menu"><li id="menu-item-161713" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-161713"><a href="/" aria-current="page">Trang chủ</a></li>
 <li id="menu-item-161678" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-161678"><a href="/tat-ca-sach">Thể Loại Sách</a>
 <ul class="sub-menu">
-	<li id="menu-item-161680" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161680"><a href="https://nhasachmienphi.com/category/am-thuc-nau-an">Ẩm thực – Nấu ăn</a></li>
-	<li id="menu-item-161681" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161681"><a href="https://nhasachmienphi.com/category/co-tich-than-thoai">Cổ Tích – Thần Thoại</a></li>
-	<li id="menu-item-161682" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161682"><a href="https://nhasachmienphi.com/category/cong-nghe-thong-tin">Công Nghệ Thông Tin</a></li>
-	<li id="menu-item-161683" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161683"><a href="https://nhasachmienphi.com/category/hoc-ngoai-ngu">Học Ngoại Ngữ</a></li>
-	<li id="menu-item-161684" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161684"><a href="https://nhasachmienphi.com/category/hoi-ky-tuy-but">Hồi Ký – Tuỳ Bút</a></li>
-	<li id="menu-item-161685" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161685"><a href="https://nhasachmienphi.com/category/huyen-bi-gia-tuong">Huyền bí – Giả Tưởng</a></li>
-	<li id="menu-item-161687" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161687"><a href="https://nhasachmienphi.com/category/khoa-hoc-ky-thuat">Khoa Học – Kỹ Thuật</a></li>
-	<li id="menu-item-161688" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161688"><a href="https://nhasachmienphi.com/category/kiem-hiep-tien-hiep">Kiếm Hiệp – Tiên Hiệp</a></li>
-	<li id="menu-item-161689" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161689"><a href="https://nhasachmienphi.com/category/kien-truc-xay-dung">Kiến Trúc – Xây Dựng</a></li>
-	<li id="menu-item-161690" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161690"><a href="https://nhasachmienphi.com/category/kinh-te-quan-ly">Kinh Tế – Quản Lý</a></li>
-	<li id="menu-item-161691" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161691"><a href="https://nhasachmienphi.com/category/lich-su-chinh-tri">Lịch Sử – Chính Trị</a></li>
-	<li id="menu-item-161692" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161692"><a href="https://nhasachmienphi.com/category/marketing-ban-hang">Marketing – Bán hàng</a></li>
-	<li id="menu-item-161693" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161693"><a href="https://nhasachmienphi.com/category/nong-lam-ngu">Nông – Lâm – Ngư</a></li>
-	<li id="menu-item-161694" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161694"><a href="https://nhasachmienphi.com/category/phieu-luu-mao-hiem">Phiêu Lưu – Mạo Hiểm</a></li>
-	<li id="menu-item-161695" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161695"><a href="https://nhasachmienphi.com/category/sach-giao-khoa">Sách Giáo Khoa</a></li>
-	<li id="menu-item-161696" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161696"><a href="https://nhasachmienphi.com/category/tam-ly-ky-nang-song">Tâm Lý – Kỹ Năng Sống</a></li>
-	<li id="menu-item-161697" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161697"><a href="https://nhasachmienphi.com/category/the-thao-nghe-thuat">Thể Thao – Nghệ Thuật</a></li>
-	<li id="menu-item-161698" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161698"><a href="https://nhasachmienphi.com/category/thu-vien-phap-luat">Thư Viện Pháp Luật</a></li>
-	<li id="menu-item-161699" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161699"><a href="https://nhasachmienphi.com/category/tieu-thuyet-phuong-tay">Tiểu Thuyết Phương Tây</a></li>
-	<li id="menu-item-161700" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161700"><a href="https://nhasachmienphi.com/category/tieu-thuyet-trung-quoc">Tiểu Thuyết Trung Quốc</a></li>
-	<li id="menu-item-161701" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161701"><a href="https://nhasachmienphi.com/category/triet-hoc">Triết Học</a></li>
-	<li id="menu-item-161702" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161702"><a href="https://nhasachmienphi.com/category/trinh-tham-hinh-su">Trinh Thám – Hình Sự</a></li>
-	<li id="menu-item-161703" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161703"><a href="https://nhasachmienphi.com/category/truyen-cuoi-tieu-lam">Truyện Cười – Tiếu Lâm</a></li>
-	<li id="menu-item-161704" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161704"><a href="https://nhasachmienphi.com/category/truyen-ma-truyen-kinh-di">Truyện Ma – Truyện Kinh Dị</a></li>
-	<li id="menu-item-161705" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161705"><a href="https://nhasachmienphi.com/category/truyen-ngan-ngon-tinh">Truyện Ngắn – Ngôn Tình</a></li>
-	<li id="menu-item-161706" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161706"><a href="https://nhasachmienphi.com/category/truyen-teen-tuoi-hoc-tro">Truyên Teen – Tuổi Học Trò</a></li>
-	<li id="menu-item-161707" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161707"><a href="https://nhasachmienphi.com/category/truyen-tranh">Truyện Tranh</a></li>
-	<li id="menu-item-161708" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161708"><a href="https://nhasachmienphi.com/category/tu-vi-phong-thuy">Tử Vi – Phong Thủy</a></li>
-	<li id="menu-item-161709" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161709"><a href="https://nhasachmienphi.com/category/van-hoa-ton-giao">Văn Hóa – Tôn Giáo</a></li>
-	<li id="menu-item-161710" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161710"><a href="https://nhasachmienphi.com/category/van-hoc-viet-nam">Văn Học Việt Nam</a></li>
-	<li id="menu-item-161711" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161711"><a href="https://nhasachmienphi.com/category/y-hoc-suc-khoe">Y Học – Sức Khỏe</a></li>
-	<li id="menu-item-161686" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161686"><a href="https://nhasachmienphi.com/category/sach-noi-mien-phi">Sách nói miễn phí</a></li>
-	<li id="menu-item-352041" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-352041"><a href="https://nhasachmienphi.com/category/tho-hay">Thơ Hay</a></li>
+    <li><a href="http://localhost:8080/category/1">Ẩm thực – Nấu ăn</a></li>
+    <li><a href="http://localhost:8080/category/2">Cổ Tích – Thần Thoại</a></li>
+    <li><a href="http://localhost:8080/category/3">Công Nghệ Thông Tin</a></li>
+    <li><a href="http://localhost:8080/category/4">Học Ngoại Ngữ</a></li>
+    <li><a href="http://localhost:8080/category/5">Hồi Ký – Tuỳ Bút</a></li>
+    <li><a href="http://localhost:8080/category/6">Huyền bí – Giả Tưởng</a></li>
+    <li><a href="http://localhost:8080/category/7">Khoa Học – Kỹ Thuật</a></li>
+    <li><a href="http://localhost:8080/category/8">Kiếm Hiệp – Tiên Hiệp</a></li>
+    <li><a href="http://localhost:8080/category/9">Kiến Trúc – Xây Dựng</a></li>
+    <li><a href="http://localhost:8080/category/10">Kinh Tế – Quản Lý</a></li>
+    <li><a href="http://localhost:8080/category/11">Lịch Sử – Chính Trị</a></li>
+    <li><a href="http://localhost:8080/category/12">Marketing – Bán hàng</a></li>
+    <li><a href="http://localhost:8080/category/13">Nông – Lâm – Ngư</a></li>
+    <li><a href="http://localhost:8080/category/14">Phiêu Lưu – Mạo Hiểm</a></li>
+    <li><a href="http://localhost:8080/category/15">Sách Giáo Khoa</a></li>
+    <li><a href="http://localhost:8080/category/16">Tâm Lý – Kỹ Năng Sống</a></li>
+    <li><a href="http://localhost:8080/category/17">Thể Thao – Nghệ Thuật</a></li>
+    <li><a href="http://localhost:8080/category/18">Thư Viện Pháp Luật</a></li>
+    <li><a href="http://localhost:8080/category/19">Tiểu Thuyết Phương Tây</a></li>
+    <li><a href="http://localhost:8080/category/20">Tiểu Thuyết Trung Quốc</a></li>
+    <li><a href="http://localhost:8080/category/21">Triết Học</a></li>
+    <li><a href="http://localhost:8080/category/22">Trinh Thám – Hình Sự</a></li>
+    <li><a href="http://localhost:8080/category/23">Truyện Cười – Tiếu Lâm</a></li>
+    <li><a href="http://localhost:8080/category/24">Truyện Ma – Truyện Kinh Dị</a></li>
+    <li><a href="http://localhost:8080/category/25">Truyện Ngắn – Ngôn Tình</a></li>
+    <li><a href="http://localhost:8080/category/26">Truyên Teen – Tuổi Học Trò</a></li>
+    <li><a href="http://localhost:8080/category/27">Truyện Tranh</a></li>
+    <li><a href="http://localhost:8080/category/28">Tử Vi – Phong Thủy</a></li>
+    <li><a href="http://localhost:8080/category/29">Văn Hóa – Tôn Giáo</a></li>
+    <li><a href="http://localhost:8080/category/30">Văn Học Việt Nam</a></li>
+    <li><a href="http://localhost:8080/category/31">Y Học – Sức Khỏe</a></li>
+    <li><a href="http://localhost:8080/category/32">Sách nói miễn phí</a></li>
+    <li><a href="http://localhost:8080/category/33">Thơ Hay</a></li>
 </ul>
 </li>
 <li id="menu-item-336376" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-336376"><a href="https://nhasachmienphi.com/ma-giam-gia">Mã Giảm Giá</a></li>
 </ul></div>				</div>
 			</div>
 			<div class="hright">
-				<form id="search" role="search" method="get" action="https://nhasachmienphi.com/">
-				    <input placeholder="Tìm kiếm sách" value="" name="s" id="s">
-				    <button><i class="fa fa-search"></i></button>
-				</form>
+            <form id="search" role="search" method="get" action="/search">
+                <input placeholder="Tìm kiếm sách" value="" name="q" id="q">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+
 				<a class="trigger_menu"><i class="fa fa-bars"></i></a>
 			</div>
 		</div>
 	</header>
-	<div class="container">
+
 		<div class="line"></div>
-		<div class="til_noti">Sách ebook được sưu tầm từ Internet, Bản quyền sách thuộc về Tác giả &amp; Nhà xuất bản. Trang Web hiện đặt quảng cáo để có kinh phí duy trì hoạt động, mong Quý Bạn đọc thông cảm ạ <img draggable="false" role="img" class="emoji" alt="💖" src="https://s.w.org/images/core/emoji/15.0.3/svg/1f496.svg"><img draggable="false" role="img" class="emoji" alt="💖" src="https://s.w.org/images/core/emoji/15.0.3/svg/1f496.svg"></div>
+		
 	</div><div class="container">
 	<div class="main_home">
 		<div class="text-center">
 			<h1>Thư Viện Ebook Miễn Phí</h1>
 			<div class="row">
 				<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 mg-t-15">
-					<div class="fs-20 fw-300"><p><strong><font color="0000FF">Nhà sách miễn phí</font></strong> được xây dựng nhằm chia sẻ sách ebook miễn phí cho những ai khó khăn, chưa có điều kiện mua sách.<br>
-Nếu <strong> Bạn có điều kiện<strong>, Hãy mua sách giấy để ủng hộ Tác giả và Nhà xuất bản.<br>
-<strong><a href="https://shorten.asia/1bxjcJAQ" target="_blanks"><font color="0000FF">- xem Sách Giảm Giá tại đây -</font></a></strong></strong></strong></p><strong><strong>
-<p><strong><a href="https://nhasachmienphi.com/kho-sach-noi-tang-ban-doc-sach-noi-mien-phi-audio-book.html" target="_blanks"><font color="000000"> ♥️ TẶNG Bạn đọc 184 cuốn SÁCH NÓI "tại đây"♥️</font></a></strong></p>
+
+<p><strong><a href="https://nhasachmienphi.com/kho-sach-noi-tang-ban-doc-sach-noi-mien-phi-audio-book.html" target="_blanks"><font color="000000"></font></a></strong></p>
 </strong></strong></div><strong><strong>
 				</strong></strong></div><strong><strong>
 			</strong></strong></div><strong><strong>
 			
 		</strong></strong></div><strong><strong>
 		<div class="mg-tb-30"><div class="line"></div></div>
-		<div class="row">
-							<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 mg-tb-7">
-					<div class="item_folder">
-						<a href="https://nhasachmienphi.com/category/am-thuc-nau-an"><i class="fa fa-folder-open"></i>Ẩm thực - Nấu ăn</a>
-					</div>
-				</div>
-								<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 mg-tb-7">
-					<div class="item_folder">
-						<a href="https://nhasachmienphi.com/category/co-tich-than-thoai"><i class="fa fa-folder-open"></i>Cổ Tích - Thần Thoại</a>
-					</div>
-				</div>
-								<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 mg-tb-7">
-					<div class="item_folder">
-						<a href="https://nhasachmienphi.com/category/cong-nghe-thong-tin"><i class="fa fa-folder-open"></i>Công Nghệ Thông Tin</a>
-					</div>
-				</div>
-								<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 mg-tb-7">
-					<div class="item_folder">
-						<a href="https://nhasachmienphi.com/category/hoc-ngoai-ngu"><i class="fa fa-folder-open"></i>Học Ngoại Ngữ</a>
-					</div>
-				</div>
-								<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 mg-tb-7">
-					<div class="item_folder">
-						<a href="https://nhasachmienphi.com/category/hoi-ky-tuy-but"><i class="fa fa-folder-open"></i>Hồi Ký - Tuỳ Bút</a>
-					</div>
-				</div>
-								<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 mg-tb-7">
-					<div class="item_folder">
-						<a href="https://nhasachmienphi.com/category/huyen-bi-gia-tuong"><i class="fa fa-folder-open"></i>Huyền bí - Giả Tưởng</a>
-					</div>
-				</div>
-								<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 mg-tb-7">
-					<div class="item_folder">
-						<a href="https://nhasachmienphi.com/category/khoa-hoc-ky-thuat"><i class="fa fa-folder-open"></i>Khoa Học - Kỹ Thuật</a>
-					</div>
-				</div>
-								<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 mg-tb-7">
-					<div class="item_folder">
-						<a href="https://nhasachmienphi.com/category/kiem-hiep-tien-hiep"><i class="fa fa-folder-open"></i>Kiếm Hiệp - Tiên Hiệp</a>
-					</div>
-				</div>
-								<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 mg-tb-7">
-					<div class="item_folder">
-						<a href="https://nhasachmienphi.com/category/kien-truc-xay-dung"><i class="fa fa-folder-open"></i>Kiến Trúc - Xây Dựng</a>
-					</div>
-				</div>
-								<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 mg-tb-7">
-					<div class="item_folder">
-						<a href="https://nhasachmienphi.com/category/kinh-te-quan-ly"><i class="fa fa-folder-open"></i>Kinh Tế - Quản Lý</a>
-					</div>
-				</div>
-								<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 mg-tb-7">
-					<div class="item_folder">
-						<a href="https://nhasachmienphi.com/category/lich-su-chinh-tri"><i class="fa fa-folder-open"></i>Lịch Sử - Chính Trị</a>
-					</div>
-				</div>
-								<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 mg-tb-7">
-					<div class="item_folder">
-						<a href="https://nhasachmienphi.com/category/marketing-ban-hang"><i class="fa fa-folder-open"></i>Marketing - Bán hàng</a>
-					</div>
-				</div>
-								<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 mg-tb-7">
-					<div class="item_folder">
-						<a href="https://nhasachmienphi.com/category/nong-lam-ngu"><i class="fa fa-folder-open"></i>Nông - Lâm - Ngư</a>
-					</div>
-				</div>
-								<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 mg-tb-7">
-					<div class="item_folder">
-						<a href="https://nhasachmienphi.com/category/phieu-luu-mao-hiem"><i class="fa fa-folder-open"></i>Phiêu Lưu - Mạo Hiểm</a>
-					</div>
-				</div>
-								<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 mg-tb-7">
-					<div class="item_folder">
-						<a href="https://nhasachmienphi.com/category/sach-giao-khoa"><i class="fa fa-folder-open"></i>Sách Giáo Khoa</a>
-					</div>
-				</div>
-								<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 mg-tb-7">
-					<div class="item_folder">
-						<a href="https://nhasachmienphi.com/category/sach-noi-mien-phi"><i class="fa fa-folder-open"></i>Sách nói miễn phí</a>
-					</div>
-				</div>
-								<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 mg-tb-7">
-					<div class="item_folder">
-						<a href="https://nhasachmienphi.com/category/tam-ly-ky-nang-song"><i class="fa fa-folder-open"></i>Tâm Lý - Kỹ Năng Sống</a>
-					</div>
-				</div>
-								<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 mg-tb-7">
-					<div class="item_folder">
-						<a href="https://nhasachmienphi.com/category/the-thao-nghe-thuat"><i class="fa fa-folder-open"></i>Thể Thao - Nghệ Thuật</a>
-					</div>
-				</div>
-								<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 mg-tb-7">
-					<div class="item_folder">
-						<a href="https://nhasachmienphi.com/category/tho-hay"><i class="fa fa-folder-open"></i>Thơ Hay</a>
-					</div>
-				</div>
-								<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 mg-tb-7">
-					<div class="item_folder">
-						<a href="https://nhasachmienphi.com/category/thu-vien-phap-luat"><i class="fa fa-folder-open"></i>Thư Viện Pháp Luật</a>
-					</div>
-				</div>
-								<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 mg-tb-7">
-					<div class="item_folder">
-						<a href="https://nhasachmienphi.com/category/tieu-thuyet-phuong-tay"><i class="fa fa-folder-open"></i>Tiểu Thuyết Phương Tây</a>
-					</div>
-				</div>
-								<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 mg-tb-7">
-					<div class="item_folder">
-						<a href="https://nhasachmienphi.com/category/tieu-thuyet-trung-quoc"><i class="fa fa-folder-open"></i>Tiểu Thuyết Trung Quốc</a>
-					</div>
-				</div>
-								<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 mg-tb-7">
-					<div class="item_folder">
-						<a href="https://nhasachmienphi.com/category/triet-hoc"><i class="fa fa-folder-open"></i>Triết Học</a>
-					</div>
-				</div>
-								<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 mg-tb-7">
-					<div class="item_folder">
-						<a href="https://nhasachmienphi.com/category/trinh-tham-hinh-su"><i class="fa fa-folder-open"></i>Trinh Thám - Hình Sự</a>
-					</div>
-				</div>
-								<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 mg-tb-7">
-					<div class="item_folder">
-						<a href="https://nhasachmienphi.com/category/truyen-cuoi-tieu-lam"><i class="fa fa-folder-open"></i>Truyện Cười - Tiếu Lâm</a>
-					</div>
-				</div>
-								<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 mg-tb-7">
-					<div class="item_folder">
-						<a href="https://nhasachmienphi.com/category/truyen-ma-truyen-kinh-di"><i class="fa fa-folder-open"></i>Truyện Ma - Truyện Kinh Dị</a>
-					</div>
-				</div>
-								<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 mg-tb-7">
-					<div class="item_folder">
-						<a href="https://nhasachmienphi.com/category/truyen-ngan-ngon-tinh"><i class="fa fa-folder-open"></i>Truyện Ngắn - Ngôn Tình</a>
-					</div>
-				</div>
-								<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 mg-tb-7">
-					<div class="item_folder">
-						<a href="https://nhasachmienphi.com/category/truyen-teen-tuoi-hoc-tro"><i class="fa fa-folder-open"></i>Truyên Teen - Tuổi Học Trò</a>
-					</div>
-				</div>
-								<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 mg-tb-7">
-					<div class="item_folder">
-						<a href="https://nhasachmienphi.com/category/truyen-tranh"><i class="fa fa-folder-open"></i>Truyện Tranh</a>
-					</div>
-				</div>
-								<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 mg-tb-7">
-					<div class="item_folder">
-						<a href="https://nhasachmienphi.com/category/tu-vi-phong-thuy"><i class="fa fa-folder-open"></i>Tử Vi - Phong Thủy</a>
-					</div>
-				</div>
-								<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 mg-tb-7">
-					<div class="item_folder">
-						<a href="https://nhasachmienphi.com/category/van-hoa-ton-giao"><i class="fa fa-folder-open"></i>Văn Hóa - Tôn Giáo</a>
-					</div>
-				</div>
-								<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 mg-tb-7">
-					<div class="item_folder">
-						<a href="https://nhasachmienphi.com/category/van-hoc-viet-nam"><i class="fa fa-folder-open"></i>Văn Học Việt Nam</a>
-					</div>
-				</div>
-								<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 mg-tb-7">
-					<div class="item_folder">
-						<a href="https://nhasachmienphi.com/category/y-hoc-suc-khoe"><i class="fa fa-folder-open"></i>Y Học - Sức Khỏe</a>
-					</div>
-				</div>
-						</div>
-	</strong></strong></div><strong><strong>
-</strong></strong></div><strong><strong>
-<div class="container">
-	<div class="ads_text"><center><a href="https://shorten.asia/FWTdxUvQ" target="_blanks"><img src="https://nhasachmienphi.com/wp-content/uploads/shopee-freeship.gif"></a></center></div>
-	<footer class="footer_main">
-		<strong>Phản hồi sách có nội dung xấu, xin gửi về: NhasachMienphi.com@gmail.com</strong> - <strong><a href=" https://bit.ly/apkdocsach " target="_blank"><font color="0000FF">[Tải Ứng dụng đọc sách Epub, Mobi... tại đây]</font></a></strong>	</footer>
-</div>
-<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div></div>
-<script async="" defer="" crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&amp;version=v7.0" nonce="Ymef7cI2"></script>
-<script src="https://sp.zalo.me/plugins/sdk.js"></script>
-        <div id="affiliate-popup" class="affiliate-popup-overlay">
-            <div class="affiliate-popup-content">
-                <a id="popup-link" href="https://shorten.asia/xPNqMEdn" target="_blank" rel="noopener">
-                    <img src="https://nhasachmienphi.com/wp-content/uploads/ma-giam-gia-shopee-3.png" alt="Ad" style="width:100%; height:100%; object-fit:cover; border-radius:8px;">
-                    <button id="close-popup" class="affiliate-popup-close" aria-label="Close Popup">×</button>
+    <div class="row">
+        <div th:each="category : ${categories}" class="col-xs-12 col-sm-4 col-md-4 col-lg-4 mg-tb-7">
+            <div class="item_folder">
+                <a th:href="@{/category/{id}(id=${category.id})}">
+                    <i class="fa fa-folder-open"></i>
+                    <span th:text="${category.name}">Category Name</span>
                 </a>
             </div>
         </div>
-        2880<div class="bl-sticky-icon">
-    <a target="_blank" href="https://shorten.asia/RH75H51p" class="bl-sticky-icon-close"><span>×</span></a>
-    <a target="_blank" href="https://shorten.asia/RH75H51p" rel="nofollow">
-        <img src="https://nhasachmienphi.com/wp-content/uploads/flash-sales.png" alt="sticky">
-    </a>
-</div>
+    </div>
+	</strong></strong></div><strong><strong>
+</strong></strong></div><strong><strong>
+
+<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div></div>
+<script async="" defer="" crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&amp;version=v7.0" nonce="Ymef7cI2"></script>
+
 <script type="text/javascript">
     jQuery(function(){
         var cookieName = 'sticky_icon_close';
