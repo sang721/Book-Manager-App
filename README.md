@@ -1,90 +1,140 @@
-Dưới đây là phiên bản **README.md chuẩn GitHub**, có **badge**, **mục lục**, và trình bày đẹp – phù hợp cho một dự án web của sinh viên CNTT.
-Bạn có thể copy–paste thẳng vào GitHub.
 
----
-# **Web Sách Free**
----
+# 📚 **Book Manager App – Ứng dụng Đọc & Quản lý Sách **
 
-## **📚 Giới thiệu**
-
-**Web Sách Free** là một trang web đọc và tải sách miễn phí, được xây dựng bằng **Java**.
-Website được phát triển trong bối cảnh một dự án học tập, nhằm thực hành các kỹ năng thiết kế giao diện, xử lý dữ liệu và xây dựng hệ thống tìm kiếm trong ứng dụng web.
+![Java](https://img.shields.io/badge/Java-17-orange?style=flat-square)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.x-brightgreen?style=flat-square)
+![Status](https://img.shields.io/badge/Status-Active-blue?style=flat-square)
 
 ---
 
-## **📑 Mục lục**
+## **1. Giới thiệu**
 
-* [Giới thiệu]
-* [Chức năng chính]
-* [Công nghệ sử dụng]
-* [Cấu trúc hoạt động]
-* [Nguồn dữ liệu]
-* [Mục tiêu dự án]
+**Book Manager App** là ứng dụng web đọc sách trực tuyến được phát triển bằng **Spring Boot**, cho phép người dùng tìm kiếm, xem thông tin và tải sách dưới dạng PDF.
+Dự án được xây dựng với mục tiêu thực hành các kiến thức về lập trình Java Web, Spring Boot, tổ chức dữ liệu và thiết kế giao diện.
+
+Ứng dụng được nhóm 4 thực hiện trong phạm vi học phần lập trình web.
 
 ---
 
-## **✨ Chức năng chính**
+## **2. Thông tin nhóm thực hiện**
 
-### **1. Trang chủ**
+**Nhóm 4 – Khoa Công nghệ Thông tin**
 
-* Hiển thị danh sách **các thể loại sách**.
-* Giao diện trực quan, dễ thao tác.
-
-### **2. Thanh tìm kiếm**
-
-* Nằm ở phần đầu trang.
-* Cho phép tìm kiếm sách theo **tên sách** hoặc **từ khóa**.
-
-### **3. Danh sách sách theo thể loại**
-
-* Khi chọn một thể loại, hệ thống sẽ hiển thị toàn bộ đầu sách tương ứng.
-* Có chức năng **phân trang (pagination)** giúp người dùng xem thêm các sách khác.
-
-### **4. Trang chi tiết sách**
-
-* Hiển thị đầy đủ thông tin:
-
-  * Tác giả
-  * Tóm tắt nội dung
-  * Hình minh họa (nếu có)
-* Cung cấp **file PDF** để tải về hoặc đọc trực tuyến.
+| MSSV           | Họ và tên               | Vai trò    |
+| -------------- | ----------------------- | ---------- |
+| **K24DTCN224** | **Nguyễn Đình Sang**    | Thành viên |
+| **K24DTCN507** | **Phạm Đặng Vân Giang** | Thành viên |
 
 ---
 
-## **🛠 Công nghệ sử dụng**
+## **3. Chức năng chính**
 
-* **Ngôn ngữ chính:** Java
-* **Framework / Library (nếu có):** (Bạn có thể thêm vào nếu dùng Spring, JSP, Servlet, JDBC, v.v.)
-* **Cơ sở dữ liệu:** (Nếu có, bạn có thể bổ sung như MySQL/MongoDB…)
-* **Frontend:** HTML/CSS/JS (nếu có)
+### 🔎 **Tìm kiếm sách**
+
+* Tìm theo tên sách hoặc từ khóa.
+* Tối ưu tốc độ phản hồi.
+
+### 📂 **Quản lý thể loại sách**
+
+* Trang chủ hiển thị danh sách thể loại.
+* Khi chọn thể loại, hiển thị toàn bộ các đầu sách tương ứng.
+* Hỗ trợ **phân trang (pagination)**.
+
+### 📘 **Trang chi tiết sách**
+
+Hiển thị:
+
+* Tác giả
+* Tóm tắt nội dung
+* Hình ảnh bìa (nếu có)
+* File PDF để tải xuống
+
+### 📄 **Tải file PDF**
+
+* Sách được lưu dưới dạng PDF từ các nguồn công khai.
 
 ---
 
-## **🔎 Cấu trúc hoạt động của website**
+## **4. Công nghệ sử dụng**
 
-1. Người dùng truy cập trang chủ
-2. Chọn thể loại hoặc tìm kiếm bằng thanh công cụ
-3. Xem các đầu sách tương ứng
-4. Click vào sách muốn xem
-5. Hệ thống hiển thị chi tiết + cung cấp file PDF để tải xuống
+### **Backend**
 
-Luồng hoạt động được thiết kế đơn giản, dễ hiểu và tối ưu cho người dùng phổ thông.
+* Spring Boot 3.x
+
+### **Frontend**
+
+* HTML / CSS / JavaScript
+
+### **Database**
+
+### **Build tool**
+
+* Maven
 
 ---
 
-## **📘 Nguồn dữ liệu**
+## **5. Kiến trúc hệ thống**
 
-* Sách được **tổng hợp từ Google** và các nguồn mở/public domain.
-* Dữ liệu chỉ mang tính phục vụ học tập và tham khảo.
+Ứng dụng được xây dựng theo mô hình **MVC**, bao gồm:
+
+```
+src/main/java
+│
+├── controller/      → Xử lý request HTTP
+├── service/         → Chứa logic nghiệp vụ
+├── repository/      → Tương tác cơ sở dữ liệu (JPA)
+├── model/           → Định nghĩa thực thể (Book, Category)
+└── BookManagerApp
+```
+
+**Thư mục resources:**
+
+```
+src/main/resources
+│── templates/       → Giao diện Thymeleaf
+│── static/          → CSS, JS, ảnh, PDF
+└── application.properties
+```
 
 ---
 
-## **🎯 Mục tiêu dự án**
+## **6. Cách chạy dự án**
 
-Dự án được xây dựng với các mục tiêu chính:
+### **Yêu cầu**
 
-* Áp dụng kiến thức lập trình Java vào phát triển ứng dụng web thực tế.
-* Thực hành thiết kế hệ thống tìm kiếm, phân loại dữ liệu và giao diện người dùng.
-* Tạo sản phẩm phục vụ đọc sách miễn phí cho người dùng.
-* Làm tiền đề cho các dự án nâng cấp sau này.
+* JDK 17+
+* Maven 3+
 
+### **Chạy dự án**
+
+```bash
+git clone https://github.com/sang721/Book-Manager-App.git
+cd Book-Manager-App
+mvn spring-boot:run
+```
+
+Ứng dụng chạy tại:
+
+👉 **[http://localhost:8080](http://localhost:8080)**
+
+---
+
+## **7. Nguồn dữ liệu**
+
+* Các file PDF được **tổng hợp từ Google** và các nguồn public domain.
+* Dự án chỉ nhằm mục đích **học tập**, **phi thương mại**.
+
+---
+
+## **8. Hướng phát triển**
+
+* Chức năng đăng ký / đăng nhập
+* Lưu sách yêu thích
+
+---
+
+## **9. Kết luận**
+
+Dự án giúp nhóm 4 ứng dụng kiến thức lập trình web với Spring Boot vào thực tiễn, nâng cao khả năng thiết kế hệ thống, quản lý dữ liệu và tạo ra sản phẩm hoàn chỉnh phục vụ người dùng.
+
+---
