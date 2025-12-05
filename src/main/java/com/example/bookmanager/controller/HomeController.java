@@ -66,4 +66,16 @@ public class HomeController {
         return "BookDetail"; // Thymeleaf template for book details
     }
 
+    @GetMapping("/search")
+    public String searchBooks(@RequestParam("q") String query, Model model) {
+        List<BookDocument> books = bookRepository.findByTitleContainingIgnoreCase(query);
+        model.addAttribute("books", books);
+        model.addAttribute("query", query);
+        model.addAttribute("currentPage", 0);
+        model.addAttribute("totalPages", 0);
+        model.addAttribute("categoryId", "");
+        model.addAttribute("category", "");
+        return "Category";
+    }
+
 }

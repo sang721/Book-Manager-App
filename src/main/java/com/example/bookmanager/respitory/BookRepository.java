@@ -19,5 +19,7 @@ public interface BookRepository extends MongoRepository<BookDocument, String> {
 
     // Pagination version
     Page<BookDocument> findByCategoryId(Integer categoryId, Pageable pageable);
+
+    List<BookDocument> findByTitleContainingIgnoreCase(String title);
 }
 
