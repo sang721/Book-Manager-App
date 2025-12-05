@@ -44,9 +44,9 @@ Dự án được xây dựng với mục tiêu thực hành các kiến thức 
 
 Hiển thị:
 
-* Tác giả
+* Hình ảnh bìa sách
+* Thông tin tác giả 
 * Tóm tắt nội dung
-* Hình ảnh bìa (nếu có)
 * File PDF để tải xuống
 
 ### 📄 **Tải file PDF**
@@ -138,3 +138,4 @@ mvn spring-boot:run
 Dự án giúp nhóm 4 ứng dụng kiến thức lập trình web với Spring Boot vào thực tiễn, nâng cao khả năng thiết kế hệ thống, quản lý dữ liệu và tạo ra sản phẩm hoàn chỉnh phục vụ người dùng.
 
 ---
+
